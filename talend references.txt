@@ -1,0 +1,150 @@
+Talend Important Concepts:
+
+Incremental Load vs Full Load
+Staging Area
+Bulk Load vs Normal Load
+Usage of Update, Delete and Insert
+Usage of Rollback and Commit
+Setting Not Null and Null check using Ternary operation
+Filter in tMap
+Memory Management(JVM Parameters)
+ETL vs ELT
+SCD Concepts in Talend
+CDC Concepts
+Implicit Context
+String Handling Concepts
+Recovery Check Pointing
+Parallelize jobs
+Usage of tWarn and tDie
+Logs using tLogcatcher, tStatCatcher and tFlowMeterCatcher
+Usage of tSendMail
+Routine Call
+Understanding of XML and JSON
+Rest and Soap Components using Talend
+File Components
+DB Components
+Sort Components
+Aggregate Components
+tMap vs tJoin
+Normalize and DeNormalize
+tJava Vs tJavaFlex vs tJavaRow
+ 
+
+ 
+
+Talend References:
+
+ 
+
+http://Talendforge.org
+
+http://community.talend.com
+
+http://help.talend.com
+
+https://www.tutorialspoint.com/talend/index.htm
+
+https://www.edureka.co/blog/talend-etl-tool/
+
+https://www.talendbyexample.com/
+
+https://www.edureka.co/blog/talend-etl-tool/
+
+
+ 
+
+ 
+
+***Incremental Load:
+
+http://dataeng.ninja/etl/talend/2017/03/08/incremental-loading/
+
+ 
+
+DWH Concepts:-
+
+Star Schema vs SnowFlake Schema
+OLTP vs OLAP
+Data Mining
+Slowly Changing Dimension
+Conceptual Data Model
+Logical Data Model
+Physical Data Model
+ 
+
+Reference:
+
+https://www.1keydata.com/datawarehousing/concepts.html
+
+ 
+
+
+
+Best Practices:-
+
+ 
+
+1. To start project with Business Model, also attach the document to it whenever Business model gets changed
+
+ 
+
+2. Talend workspace path should not contain any spaces.
+
+ 
+
+3. Have a document for important components
+
+ 
+
+4. Maintain the job version and document , do not forget record it in document, when changes happen
+
+ 
+
+5. Create Repository Metadata for DB connections and retrieve database table schema for DB tables.
+
+ 
+
+6.Use Repository Schema for Files/DB and DB connections.
+
+ 
+
+7.Create Database connection using t<Vendor>Connection component and use this connection in the Job. Do not make new connection with every component
+
+ 
+
+8. Create a Repository Document corresponding to every Talend job including revision history.
+
+ 
+
+9.Provide Sub Job title for every sub job to describe the sub job purpose/objective.
+
+ 
+
+10.Avoid Hard Coding in Talend Job component. Instead use Talend context variables
+
+ 
+
+11.Create Context Groups in Repository
+
+ 
+
+12.Use Talend.properties file to provide the values to context variables using tContextLoad
+
+ 
+
+13. Create Variables in tMap and use the variables to assign the values to target fields.
+
+ 
+
+14.Create user routines/functions for common transformation and validation
+
+ 
+
+15.Always rename Main Flows in Talend Job to meaningful names
+
+ 
+
+Talend DI Cookbook:
+https://1drv.ms/b/s!AqZ5Ii__B1WyaoR3if-4SlS4_Ys
+
+ 
